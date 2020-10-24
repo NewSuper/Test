@@ -67,4 +67,9 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //combine组合图像使用
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+    implementation 'pub.devrel:easypermissions:0.4.2'
+    implementation 'com.github.Othershe:NiceImageView:1.0.0'
 }

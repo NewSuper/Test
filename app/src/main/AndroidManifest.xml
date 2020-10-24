@@ -20,6 +20,8 @@
         <activity android:name=".gank.ui.GankSearchActivity"/>
         <activity android:name=".gank.ui.GalleryActivity"/>
         <activity android:name=".gank.ui.GankWebActivity"/>
+
+        <activity android:name=".combine.CombineBitmapActivity"/>
     </application>
 
 </manifest>
