@@ -13,4 +13,7 @@
     <color name="divider_color">#5aaa</color>
     <color name="transparent">#0000</color>
     <color name="blue">#3a66b1</color>
+
+    <color name="gray">#eeeeee</color>
+    <color name="com_bg_gray">#aaaaaaaa</color>
 </resources>
