@@ -23,6 +23,13 @@
 
         <activity android:name=".combine.CombineBitmapActivity"/>
         <activity android:name=".supertextview.SuperTextActivity"/>
+
+        <activity android:name=".textpathview.PathActivity"/>
+        <activity android:name=".textpathview.PathFirstActivity"/>
+        <activity android:name=".textpathview.PathSecondActivity"/>
+        <activity android:name=".textpathview.PathThirdActivity"/>
+        <activity android:name=".textpathview.PathForthActivity"/>
+        <activity android:name=".textpathview.PathFifthActivity"/>
     </application>
 
 </manifest>

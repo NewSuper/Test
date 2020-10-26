@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First_Effect"
+        android:id="@+id/btn_first"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second_Effect"
+        android:id="@+id/btn_second"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Third_Effect"
+        android:id="@+id/btn_third"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forth_Effect"
+        android:id="@+id/btn_forth"/>
+
+    \<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Fifth_Effect"
+    android:id="@+id/btn_fifth"/>
+</LinearLayout>
