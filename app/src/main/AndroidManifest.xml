@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
         tools:ignore="ProtectedPermissions" />
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -48,6 +49,38 @@
 
         <activity android:name=".dianzan.pop.PopLikeActivity"/>
         <activity android:name=".dianzan.pop.ListActivity"/>
+
+        <activity android:name=".swipeback.SwipeBackActivity"
+            android:theme="@style/AppTheme5"/>
+        <activity
+            android:name=".swipeback.CommonActivity"
+            android:theme="@style/AppTheme5" >
+
+        </activity>
+        <activity
+            android:name=".swipeback.ScrollViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.HorizontalScrollViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.NestedScrollViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.ListViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.RecyclerViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.ViewPagerActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.WebViewActivity"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".swipeback.SwipeRefreshLayoutActivity"
+            android:theme="@style/AppTheme5" />
     </application>
 
 </manifest>
