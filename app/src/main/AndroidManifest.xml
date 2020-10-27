@@ -43,6 +43,11 @@
         <activity android:name=".whiteboard.WhiteBoardActivity"/>
 
         <activity android:name=".downloader.DownloadActivity"/>
+
+        <activity android:name=".dianzan.DianzanActivity"/>
+
+        <activity android:name=".dianzan.pop.PopLikeActivity"/>
+        <activity android:name=".dianzan.pop.ListActivity"/>
     </application>
 
 </manifest>

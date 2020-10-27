@@ -9,4 +9,8 @@
     <dimen name="control_draw_padding">3dp</dimen>
     <dimen name="control_layout_padding">15dp</dimen>
     <dimen name="sketch_gv_padding">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
 </resources>

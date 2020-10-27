@@ -48,4 +48,19 @@
         <item name="android:textColor">@color/textColorSecondary</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
     </style>
+
+    <style name="animFriendCircle">
+        <item name="android:windowEnterAnimation">@anim/anim_friend_circle_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_friend_circle_out</item>
+    </style>
+
+    <style name="animScaleY">
+        <item name="android:windowEnterAnimation">@anim/anim_scale_y_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_scale_y_out</item>
+    </style>
+
+    <style name="animAlpha">
+        <item name="android:windowEnterAnimation">@anim/anim_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_alpha_out</item>
+    </style>
 </resources>
