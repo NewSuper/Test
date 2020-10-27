@@ -65,5 +65,8 @@
 
     <attr name="SwipeBackLayoutStyle" format="reference"/>
 
-
+    <declare-styleable name="CustomCancelView">
+        <attr name="view_radius" format="dimension" />
+        <attr name="view_color" format="color" />
+    </declare-styleable>
 </resources>
