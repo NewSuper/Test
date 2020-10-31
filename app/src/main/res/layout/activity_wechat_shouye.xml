@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.newsuper.code.wechat.WechatRecyclerView
+        android:overScrollMode="never"
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EDEDED">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2D2D2D"
+            android:gravity="center_vertical"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="微信"/>
+    </LinearLayout>
+</FrameLayout>

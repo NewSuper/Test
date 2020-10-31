@@ -101,6 +101,7 @@
         <activity android:name=".zhihu.ZhihuKaipingActivity"/>
         <activity android:name=".zhihu.ZhiHuViewActivity"/>
         <activity android:name=".search.JianShuSearchActivity"/>
+        <activity android:name=".wechat.WechatShouyeActivity"/>
 
     </application>
 
