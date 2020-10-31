@@ -69,4 +69,9 @@
         <attr name="view_radius" format="dimension" />
         <attr name="view_color" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="WindowImageView">
+        <attr name="src" format="reference" />
+        <attr name="frescoEnable" format="boolean" />
+    </declare-styleable>
 </resources>

@@ -96,6 +96,8 @@
             android:screenOrientation="portrait" />
 
         <service android:name=".xuanfu.WindowShowService" />
+
+        <activity android:name=".zhihu.ZhiHuViewActivity"/>
     </application>
 
 </manifest>
