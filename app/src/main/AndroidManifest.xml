@@ -97,12 +97,14 @@
 
         <service android:name=".xuanfu.WindowShowService" />
 
-
         <activity android:name=".zhihu.ZhihuKaipingActivity"/>
         <activity android:name=".zhihu.ZhiHuViewActivity"/>
         <activity android:name=".search.JianShuSearchActivity"/>
         <activity android:name=".wechat.WechatShouyeActivity"/>
 
+        <activity android:name=".loadAnimation.LoadAnimationActivity"/>
+        <service            android:name=".loadAnimation.TestService"
+            android:exported="false" />
     </application>
 
 </manifest>
