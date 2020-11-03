@@ -44,7 +44,7 @@
                 android:id="@+id/btn_stroke"
                 style="@style/control_btn"
                 android:padding="@dimen/control_draw_padding"
-                android:src="@drawable/stroke_type_rbtn_draw_checked" />
+                android:src="@mipmap/stroke_type_rbtn_draw_checked" />
 
             <ImageView
                 android:id="@+id/btn_eraser"

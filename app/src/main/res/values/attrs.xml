@@ -11,7 +11,7 @@
         </attr>
     </declare-styleable>
 
-    <attr name="duration" format="integer"/>
+<!--    <attr name="duration" format="integer"/>-->
     <attr name="showPainter" format="boolean"/>
     <attr name="showPainterActually" format="boolean"/>
     <attr name="pathStrokeWidth" format="dimension"/>
@@ -85,5 +85,9 @@
             <enum name="clicked" value="1" />
             <enum name="unclicked" value="2" />
         </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="radius" format="reference|dimension" />
     </declare-styleable>
 </resources>

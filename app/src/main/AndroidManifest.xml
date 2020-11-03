@@ -105,6 +105,9 @@
         <activity android:name=".loadAnimation.LoadAnimationActivity"/>
         <service            android:name=".loadAnimation.TestService"
             android:exported="false" />
+
+        <activity android:name=".cardswipe.CardSwipeActivity"/>
+
     </application>
 
 </manifest>

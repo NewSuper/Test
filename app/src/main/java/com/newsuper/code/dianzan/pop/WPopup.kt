@@ -9,6 +9,9 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.newsuper.code.R
 import java.lang.ref.WeakReference
 
 

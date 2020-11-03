@@ -1,88 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEDED"
-    >
+    android:background="#EDEDED">
+
     <RelativeLayout
         android:id="@+id/bglayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#322F44"
         android:alpha="0"
-        >
+        android:background="#322F44">
+
         <LinearLayout
             android:id="@+id/layout_behand"
             android:layout_width="match_parent"
-            android:orientation="vertical"
             android:layout_height="match_parent"
             android:clickable="true"
-            >
+            android:orientation="vertical">
+
             <TextView
-                android:layout_margin="20dp"
-                android:textSize="16sp"
-                android:text="小程序"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
+                android:layout_margin="20dp"
+                android:text="小程序"
                 android:textColor="#fff"
-                />
+                android:textSize="16sp"
+                android:visibility="visible" />
+
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
                 android:id="@+id/rv_inside"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="visible">
-            </androidx.recyclerview.widget.RecyclerView>
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"></androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
     </RelativeLayout>
+
     <FrameLayout
-        android:layout_above="@+id/layout_title"
         android:id="@+id/layout_ball"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:layout_above="@+id/layout_title">
+
         <View
             android:id="@+id/ball3"
-            android:layout_gravity="center"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/bg_oval">
-        </View>
+            android:layout_gravity="center"
+            android:background="@drawable/bg_oval"></View>
+
         <View
             android:id="@+id/ball2"
-            android:layout_gravity="center"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/bg_oval">
-        </View>
+            android:layout_gravity="center"
+            android:background="@drawable/bg_oval"></View>
+
         <View
             android:id="@+id/ball1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/bg_oval"
-            android:layout_gravity="center">
-        </View>
+            android:layout_gravity="center"
+            android:background="@drawable/bg_oval"></View>
 
     </FrameLayout>
+
     <LinearLayout
         android:id="@+id/layout_title"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        >
+        android:layout_alignParentBottom="true">
+
         <TextView
-            android:layout_marginLeft="16dp"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#2D2D2D"
-            android:gravity="center_vertical"
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="微信"/>
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="微信"
+            android:textColor="#2D2D2D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </RelativeLayout>
