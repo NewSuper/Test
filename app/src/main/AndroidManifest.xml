@@ -108,6 +108,8 @@
 
         <activity android:name=".cardswipe.CardSwipeActivity"/>
 
+        <activity android:name=".jinyun.JinyunActivity"/>
+
     </application>
 
 </manifest>
