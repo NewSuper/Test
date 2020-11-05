@@ -1,8 +1,10 @@
 package com.newsuper.code.whiteboard;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Build;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -17,6 +19,45 @@ import java.lang.reflect.Field;
  * Updated by nereo on 2016/1/19.
  */
 public class ScreenUtils {
+
+
+    private static int screenW;
+    private static int screenH;
+    private static float screenDensity;
+
+    public static void initScreen(Activity mActivity){
+        DisplayMetrics metric = new DisplayMetrics();
+        mActivity.getWindowManager().getDefaultDisplay().getMetrics(metric);
+        screenW = metric.widthPixels;
+        screenH = metric.heightPixels;
+        screenDensity = metric.density;
+    }
+
+    public static int getScreenW(){
+        return screenW;
+    }
+
+    public static int getScreenH(){
+        return screenH;
+    }
+
+    public static float getScreenDensity(){
+        return screenDensity;
+    }
+
+    /** 根据手机的分辨率从 dp 的单位 转成为 px(像素) */
+    public static int dp2px(float dpValue) {
+        return (int) (dpValue * getScreenDensity() + 0.5f);
+    }
+
+    /** 根据手机的分辨率从 px(像素) 的单位 转成为 dp */
+    public static int px2dp(float pxValue) {
+        return (int) (pxValue / getScreenDensity() + 0.5f);
+    }
+
+
+
+
 
     public static Point getScreenSize(Context context){
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);

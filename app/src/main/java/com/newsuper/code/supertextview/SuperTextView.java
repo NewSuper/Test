@@ -5,11 +5,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Build;
-//import android.support.annotation.ColorRes;
-//import android.support.annotation.Nullable;
-//import android.support.annotation.RequiresApi;
-//import android.support.annotation.StringRes;
-//import android.support.v4.content.ContextCompat;
+
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
