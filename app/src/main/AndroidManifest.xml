@@ -110,6 +110,8 @@
 
         <activity android:name=".jinyun.JinyunActivity"/>
 
+        <activity android:name=".fitimg.FitImgActivity"/>
+
     </application>
 
 </manifest>
