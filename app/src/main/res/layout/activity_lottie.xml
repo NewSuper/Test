@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_60" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffd6d6d6" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_first"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <com.newsuper.code.slitab.LottieTabView
+                    android:id="@+id/iv_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:icon_normal="@mipmap/top_nor"
+                    app:lottie_path="vmai.json"
+                    app:tab_name="首页"
+                    app:tab_selected="true"
+                    app:text_normal_color="@color/color_9"
+                    app:text_selected_color="@color/color_3"
+                    app:text_size="9sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.newsuper.code.slitab.LottieTabView
+                        android:id="@+id/iv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:icon_normal="@mipmap/msg_nor"
+                        app:lottie_path="message.json"
+                        app:tab_name="@string/tab_msg"
+                        app:tab_selected="false"
+                        app:text_normal_color="@color/color_9"
+                        app:text_selected_color="@color/color_3"
+                        app:text_size="9sp" />
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-20dp"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_discovery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <com.newsuper.code.slitab.LottieTabView
+                    android:id="@+id/iv_discovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:icon_normal="@mipmap/find_nor"
+                    app:lottie_path="discover.json"
+                    app:tab_name="@string/tab_find"
+                    app:tab_selected="false"
+                    app:text_normal_color="@color/color_9"
+                    app:text_selected_color="@color/color_3"
+                    app:text_size="9sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <com.newsuper.code.slitab.LottieTabView
+                    android:id="@+id/iv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:icon_normal="@mipmap/mine_nor"
+                    app:lottie_path="mine.json"
+                    app:tab_name="@string/tab_mine"
+                    app:tab_selected="false"
+                    app:text_normal_color="@color/color_9"
+                    app:text_selected_color="@color/color_3"
+                    app:text_size="9sp" />
+
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

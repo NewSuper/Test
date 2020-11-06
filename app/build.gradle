@@ -88,5 +88,7 @@ dependencies {
 
     //导航lottie动画
     implementation 'com.airbnb.android:lottie:2.7.0'
+    // 图片裁剪
     api project(':matisse')
+    implementation 'com.github.yalantis:ucrop:2.2.3-native'
 }
