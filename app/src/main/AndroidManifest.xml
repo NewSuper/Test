@@ -140,6 +140,7 @@
 
         <activity android:name=".fitimg.FitImgActivity"/>
 <!--        <activity android:name=".matisse.MatisseActivity"/>-->
+        <activity android:name=".tree.TreeActivity"/>
 
     </application>
 
