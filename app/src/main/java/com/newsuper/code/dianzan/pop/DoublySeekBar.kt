@@ -4,18 +4,12 @@ package com.newsuper.code.dianzan.pop
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
-import android.os.Build
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
-import androidx.annotation.RequiresApi
 import com.newsuper.code.R
 
-
-/**
- * Created by WangLu on 2018/5/5.
- */
 class DoublySeekBar(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : View(context, attrs, defStyleAttr) {
 
     private val mBgLinePaint: Paint = Paint()
@@ -52,7 +46,7 @@ class DoublySeekBar(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) 
         mBgLinePaint.strokeJoin = Paint.Join.ROUND
         mBgLinePaint.isAntiAlias = true
         mFgLinePaint.isAntiAlias = true
-        mHandBitmap = changeBitmapSize(R.mipmap.ic_launcher, dp2px(context!!, 15f).toInt(), dp2px(context, 15f).toInt())
+        mHandBitmap = changeBitmapSize(R.mipmap.bg_invite_cn, dp2px(context!!, 15f).toInt(), dp2px(context, 15f).toInt())
         mBgHeight = mHandBitmap.height + dp2px(context, 45f)    // 背景圆角矩形的高
         mFgHeight = mBgHeight - dp2px(context, 8f)
 
@@ -98,7 +92,6 @@ class DoublySeekBar(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) 
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @SuppressLint("DrawAllocation")
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)

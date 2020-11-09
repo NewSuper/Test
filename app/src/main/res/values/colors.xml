@@ -27,4 +27,8 @@
     <color name="color_3">#333333</color>
     <color name="color_6">#666666</color>
     <color name="color_9">#999999</color>
+    <!--MainActivity item被选中的颜色-->
+    <color name="main_item_selected_color">#FF173370</color>
+    <color name="main_item_unselected_color">#ff0D2C5B</color>
+    <color name="main_item_divide_color">#0d0d0d</color>
 </resources>

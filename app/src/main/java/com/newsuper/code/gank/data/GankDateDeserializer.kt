@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class GankDateDeserializer (vararg dateFormatPatterns:String):JsonDeserializer<Date>{
-    val dateFormats:MutableList<SimpleDateFormat> = arrayListOf()
+    private val dateFormats:MutableList<SimpleDateFormat> = arrayListOf()
 
     init {
         for (item in dateFormatPatterns){

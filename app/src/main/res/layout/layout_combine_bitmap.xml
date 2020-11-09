@@ -12,21 +12,21 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <com.othershe.library.NiceImageView
+        <com.newsuper.code.combine.NiceImageView
             android:id="@+id/nice_iv1"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_marginTop="10dp"
             app:is_circle="true" />
 
-        <com.othershe.library.NiceImageView
+        <com.newsuper.code.combine.NiceImageView
             android:id="@+id/nice_iv2"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_marginTop="10dp"
             app:is_circle="true" />
 
-        <com.othershe.library.NiceImageView
+        <com.newsuper.code.combine.NiceImageView
             android:id="@+id/nice_iv3"
             android:layout_width="180dp"
             android:layout_height="180dp"

@@ -23,7 +23,7 @@ import com.zhihu.matisse.listener.OnSelectedListener;
 import java.io.File;
 import java.util.List;
 
-public class MatisseActivity extends AppCompatActivity {
+public class MatissePhotoActivity extends AppCompatActivity {
 
 
     @Override

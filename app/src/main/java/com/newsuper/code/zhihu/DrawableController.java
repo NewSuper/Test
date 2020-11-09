@@ -95,9 +95,9 @@ public class DrawableController {
                     int outHeightPx = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, options.outHeight, resources.getDisplayMetrics());
 
                     float scale = 1.0f * mView.getRealWidth() / outWidthPx;
-                    Log.e(TAG, "mView.getWidth() : " + mView.getRealWidth());
-                    Log.e(TAG, "options.outWidth : " + outWidthPx);
-                    Log.e(TAG, "scale : " + scale);
+//                    Log.e(TAG, "mView.getWidth() : " + mView.getRealWidth());
+//                    Log.e(TAG, "options.outWidth : " + outWidthPx);
+//                    Log.e(TAG, "scale : " + scale);
                     processedWidth = (int) (scale * outWidthPx);
                     processedHeight = (int) (scale * outHeightPx);
 
@@ -117,8 +117,8 @@ public class DrawableController {
 
                     mMatrix.reset();
                     mMatrix.postScale(scale, scale);
-                    Log.e(TAG, "sourceBitmap.getWidth(): " + sourceBitmap.getWidth());
-                    Log.e(TAG, "sourceBitmap.getHeight(): " + sourceBitmap.getHeight());
+                //    Log.e(TAG, "sourceBitmap.getWidth(): " + sourceBitmap.getWidth());
+                 //   Log.e(TAG, "sourceBitmap.getHeight(): " + sourceBitmap.getHeight());
 
                     if (mView == null) {
                         isProcessing = false;

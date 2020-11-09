@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.newsuper.code.R;
-import com.othershe.library.NiceImageView;
 
 import java.util.List;
 
@@ -47,13 +46,6 @@ public class CombineBitmapActivity extends AppCompatActivity implements EasyPerm
     ImageView imageView11;
 
 
-//    private int[] getResourceIds(int count) {
-//        int[] res = new int[count];
-//        for (int i = 0; i < count; i++) {
-//            res[i] = R.mipmap.ic_launcher;
-//        }
-//        return res;
-//    }
 
     private String[] getUrls(int count) {
         String[] urls = new String[count];
@@ -61,13 +53,7 @@ public class CombineBitmapActivity extends AppCompatActivity implements EasyPerm
         return urls;
     }
 
-//    private Bitmap[] getBitmaps(int count) {
-//        Bitmap[] bitmaps = new Bitmap[count];
-//        for (int i = 0; i < count; i++) {
-//            bitmaps[i] = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
-//        }
-//        return bitmaps;
-//    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,27 +79,16 @@ public class CombineBitmapActivity extends AppCompatActivity implements EasyPerm
         String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (EasyPermissions.hasPermissions(this, perms)) {
             loadDingBitmap(imageView1, 2);
-
             loadDingBitmap(imageView2, 3);
-
             loadDingBitmap(imageView3, 4);
-
             loadWechatBitmap(imageView4, 2);
-
             loadWechatBitmap(imageView5, 3);
-
             loadWechatBitmap(imageView6, 4);
-
             loadWechatBitmap(imageView7, 5);
-
             loadWechatBitmap(imageView8, 6);
-
             loadWechatBitmap(imageView9, 7);
-
             loadWechatBitmap(imageView10, 8);
-
             loadWechatBitmap(imageView11, 9);
-
         } else {
             EasyPermissions.requestPermissions(this, "need storage permission", 1000, perms);
         }
@@ -179,4 +154,3 @@ public class CombineBitmapActivity extends AppCompatActivity implements EasyPerm
                 .build();
     }
 }
-

@@ -58,7 +58,7 @@ public class DownloadActivity extends AppCompatActivity {
             @Override
             public void onData(List<LocalFileRecordBean> data) {
 
-                System.out.println(data.size()+"个记录");
+                System.out.println("---------Jarvis--------"+data.size()+"个记录");
             }
         });
     }

@@ -2,27 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.newsuper.code">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- 从sdcard中读取数据的权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- 往sdcard中写入数据的权限 -->
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
         tools:ignore="ProtectedPermissions" />
-    <!--  xuanfuwindow  android:name=".App"-->
+    <!--  xuanfuwindow  android:name=".xuanfu.App"-->
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
-        <activity android:name=".matisse.MatisseActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,15 +32,15 @@
             </intent-filter>
         </activity>
         <!--拍照上传的authorities  matisse框架限定必须为com.thunder.sample.fileprovider ，代码中设定也必须为这个，否则报Attempt to invoke virtual method 'android.content.res.XmlResourceParser -->
-<!--        <provider-->
-<!--            android:name=".matisse.PhotoFileProvider"-->
-<!--            android:authorities="${applicationId}"-->
-<!--            android:exported="false"-->
-<!--            android:grantUriPermissions="true">-->
-<!--            <meta-data-->
-<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
-<!--                android:resource="@xml/file_paths"/>-->
-<!--        </provider>-->
+        <!--        <provider-->
+        <!--            android:name=".matisse.PhotoFileProvider"-->
+        <!--            android:authorities="${applicationId}"-->
+        <!--            android:exported="false"-->
+        <!--            android:grantUriPermissions="true">-->
+        <!--            <meta-data-->
+        <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--                android:resource="@xml/file_paths"/>-->
+        <!--        </provider>-->
 
         <!--添加provider-->
         <provider
@@ -48,43 +50,45 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
+                android:resource="@xml/file_paths" />
         </provider>
 
+        <activity android:name=".gank.ui.GankActivity" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
 
-        <activity android:name=".gank.ui.GankSearchActivity"/>
-        <activity android:name=".gank.ui.GalleryActivity"/>
-        <activity android:name=".gank.ui.GankWebActivity"/>
+        <activity android:name=".gank.ui.GankSearchActivity" />
+        <activity android:name=".gank.ui.GalleryActivity" />
+        <activity android:name=".gank.ui.GankWebActivity" />
 
-        <activity android:name=".combine.CombineBitmapActivity"/>
-        <activity android:name=".supertextview.SuperTextActivity"/>
+        <activity android:name=".combine.CombineBitmapActivity" />
+        <activity android:name=".supertextview.SuperTextActivity" />
 
-        <activity android:name=".textpathview.PathActivity"/>
-        <activity android:name=".textpathview.PathFirstActivity"/>
-        <activity android:name=".textpathview.PathSecondActivity"/>
-        <activity android:name=".textpathview.PathThirdActivity"/>
-        <activity android:name=".textpathview.PathForthActivity"/>
-        <activity android:name=".textpathview.PathFifthActivity"/>
+        <activity android:name=".textpathview.PathActivity" />
+        <activity android:name=".textpathview.PathFirstActivity" />
+        <activity android:name=".textpathview.PathSecondActivity" />
+        <activity android:name=".textpathview.PathThirdActivity" />
+        <activity android:name=".textpathview.PathForthActivity" />
+        <activity android:name=".textpathview.PathFifthActivity" />
 
-        <activity android:name=".whiteboard.WhiteBoardActivity"/>
+        <activity android:name=".whiteboard.WhiteBoardActivity" />
 
-        <activity android:name=".downloader.DownloadActivity"/>
+        <activity android:name=".downloader.DownloadActivity" />
 
-        <activity android:name=".dianzan.DianzanActivity"/>
+        <activity android:name=".dianzan.DianzanActivity" />
 
-        <activity android:name=".dianzan.pop.PopLikeActivity"/>
-        <activity android:name=".dianzan.pop.ListActivity"/>
+        <activity android:name=".dianzan.pop.PopLikeActivity" />
+        <activity android:name=".dianzan.pop.ListActivity" />
 
-        <activity android:name=".swipeback.SwipeBackActivity"
-            android:theme="@style/AppTheme5"/>
+        <activity
+            android:name=".swipeback.SwipeBackActivity"
+            android:theme="@style/AppTheme5" />
         <activity
             android:name=".swipeback.CommonActivity"
-            android:theme="@style/AppTheme5" >
+            android:theme="@style/AppTheme5">
 
         </activity>
         <activity
@@ -112,7 +116,7 @@
             android:name=".swipeback.SwipeRefreshLayoutActivity"
             android:theme="@style/AppTheme5" />
 
-        <activity android:name=".xuanfu.XuanFuWindowAty"/>
+        <activity android:name=".xuanfu.XuanFuWindowAty" />
         <activity
             android:name=".xuanfu.LoginActivity"
             android:screenOrientation="portrait" />
@@ -125,22 +129,24 @@
 
         <service android:name=".xuanfu.WindowShowService" />
 
-        <activity android:name=".zhihu.ZhihuKaipingActivity"/>
-        <activity android:name=".zhihu.ZhiHuViewActivity"/>
-        <activity android:name=".search.JianShuSearchActivity"/>
-        <activity android:name=".wechat.WechatShouyeActivity"/>
+        <activity android:name=".zhihu.ZhihuKaipingActivity" />
+        <activity android:name=".zhihu.ZhiHuViewActivity" />
+        <activity android:name=".search.JianShuSearchActivity" />
+        <activity android:name=".wechat.WechatShouyeActivity" />
 
-        <activity android:name=".loadAnimation.LoadAnimationActivity"/>
-        <service            android:name=".loadAnimation.TestService"
+        <activity android:name=".loadAnimation.LoadAnimationActivity" />
+
+        <service
+            android:name=".loadAnimation.TestService"
             android:exported="false" />
 
-        <activity android:name=".cardswipe.CardSwipeActivity"/>
+        <activity android:name=".cardswipe.CardSwipeActivity" />
 
-        <activity android:name=".jinyun.JinyunActivity"/>
+        <activity android:name=".jinyun.JinyunActivity" />
 
-        <activity android:name=".fitimg.FitImgActivity"/>
-<!--        <activity android:name=".matisse.MatisseActivity"/>-->
-        <activity android:name=".tree.TreeActivity"/>
+        <activity android:name=".fitimg.FitImgActivity" />
+        <activity android:name=".matisse.MatissePhotoActivity" />
+        <activity android:name=".tree.TreeActivity" />
 
     </application>
 
