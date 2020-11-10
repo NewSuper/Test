@@ -93,4 +93,6 @@ dependencies {
     implementation 'com.github.yalantis:ucrop:2.2.3-native'
 
     implementation 'com.github.tyhjh:PermissionUtil:v1.0.5'
+
+    compile 'com.nineoldandroids:library:2.4.0'
 }

@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.newsuper.code.bollon.BollonActivity;
 import com.newsuper.code.cardswipe.CardSwipeActivity;
 import com.newsuper.code.combine.CombineBitmapActivity;
 import com.newsuper.code.dianzan.DianzanActivity;
@@ -130,6 +131,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("释放内存", R.drawable.room_multi, 1, BollonActivity.class));
         videoConnectChildList.add(new ChildBean("扩展Textview", R.drawable.room_multi, 1, SuperTextActivity.class));
         videoConnectChildList.add(new ChildBean("文字转路径动画", R.drawable.room_multi, 0, PathActivity.class));
         videoConnectChildList.add(new ChildBean("滑动关闭", R.drawable.room_multi, 0, SwipeBackActivity.class));

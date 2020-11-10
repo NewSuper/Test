@@ -31,4 +31,30 @@
     <color name="main_item_selected_color">#FF173370</color>
     <color name="main_item_unselected_color">#ff0D2C5B</color>
     <color name="main_item_divide_color">#0d0d0d</color>
+
+
+    <!-- 普通颜色值 -->
+    <color name="balloonperformer_common_purple">#d22bd0</color>
+    <color name="balloonperformer_common_indigo">#6e37db</color>
+    <color name="balloonperformer_common_blue">#4898eb</color>
+    <color name="balloonperformer_common_green">#5dc800</color>
+    <color name="balloonperformer_common_yellow">#f1e000</color>
+    <color name="balloonperformer_common_orange">#f38f00</color>
+    <color name="balloonperformer_common_red">#cd0400</color>
+    <color name="balloonperformer_common_brown">#8b531b</color>
+    <color name="balloonperformer_common_grey">#989898</color>
+    <!-- 普通颜色点击值 -->
+    <color name="balloonperformer_common_purple_pressed">#b301b1</color>
+    <color name="balloonperformer_common_indigo_pressed">#4b01e2</color>
+    <color name="balloonperformer_common_blue_pressed">#0153a8</color>
+    <color name="balloonperformer_common_green_pressed">#397901</color>
+    <color name="balloonperformer_common_yellow_pressed">#bbad01</color>
+    <color name="balloonperformer_common_orange_pressed">#935701</color>
+    <color name="balloonperformer_common_red_pressed">#9e0401</color>
+    <color name="balloonperformer_common_brown_pressed">#683501</color>
+    <color name="balloonperformer_common_grey_pressed">#5c5c5c</color>
+
+    <color name="balloonperformer_white">#ffffff</color>
+    <color name="balloonperformer_translucent">#a0000000</color>
+    <color name="balloonperformer_text_grey_dark">#505050</color>
 </resources>
