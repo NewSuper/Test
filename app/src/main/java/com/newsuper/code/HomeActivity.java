@@ -21,6 +21,7 @@ import com.newsuper.code.dianzan.pop.PopLikeActivity;
 import com.newsuper.code.downloader.DownloadActivity;
 import com.newsuper.code.fitimg.FitImgActivity;
 import com.newsuper.code.gank.ui.GankActivity;
+import com.newsuper.code.goaway.GoAwayActivity;
 import com.newsuper.code.home.BaseExpandableRecyclerViewAdapter;
 import com.newsuper.code.jinyun.JinyunActivity;
 import com.newsuper.code.loadAnimation.LoadAnimationActivity;
@@ -131,6 +132,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("防沉迷", R.drawable.room_multi, 1, GoAwayActivity.class));
         videoConnectChildList.add(new ChildBean("释放内存", R.drawable.room_multi, 1, BollonActivity.class));
         videoConnectChildList.add(new ChildBean("扩展Textview", R.drawable.room_multi, 1, SuperTextActivity.class));
         videoConnectChildList.add(new ChildBean("文字转路径动画", R.drawable.room_multi, 0, PathActivity.class));

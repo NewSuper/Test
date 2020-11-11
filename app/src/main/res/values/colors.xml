@@ -57,4 +57,7 @@
     <color name="balloonperformer_white">#ffffff</color>
     <color name="balloonperformer_translucent">#a0000000</color>
     <color name="balloonperformer_text_grey_dark">#505050</color>
+
+    <color name="grey_background">#cfd8dc</color>
+    <color name="white_background">#ffffff</color>
 </resources>

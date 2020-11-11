@@ -13,7 +13,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -95,4 +95,10 @@ dependencies {
     implementation 'com.github.tyhjh:PermissionUtil:v1.0.5'
 
     compile 'com.nineoldandroids:library:2.4.0'
+
+    implementation 'com.github.didikee:AndroidDonate:0.1.0'
+    implementation 'com.takisoft.fix:preference-v7:27.1.0.0'
+    implementation 'com.takisoft.fix:preference-v7-colorpicker:27.1.0.0'
+    implementation 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    implementation 'com.android.support:multidex:1.0.3'
 }
