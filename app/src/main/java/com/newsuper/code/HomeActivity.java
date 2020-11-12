@@ -153,9 +153,9 @@ public class HomeActivity extends AppCompatActivity {
         videoConnectChildList.add(new ChildBean("Gank", R.drawable.multi_meeting, 0, GankActivity.class));
         videoConnectChildList.add(new ChildBean("仿网易鲸云动效", R.drawable.room_multi, 0, JinyunActivity.class));
         videoConnectChildList.add(new ChildBean("断点续传下载器", R.drawable.room_multi, 0, DownloadActivity.class));
-
         videoConnectChildList.add(new ChildBean("仿钉钉群聊头像", R.drawable.room_multi, 0, CombineBitmapActivity.class));
-        // videoConnectChildList.add(new ChildBean("滑动tab转盘未写", R.drawable.room_multi, 0, .class));
+
+        videoConnectChildList.add(new ChildBean("滑动tab转盘未写", R.drawable.room_multi, 0, CombineBitmapActivity.class));
         // videoConnectChildList.add(new ChildBean("Lottie动画", R.drawable.room_multi, 0, .class));
         if (videoConnectChildList.size() != 0) {
             GroupBean videoConnectGroupBean = new GroupBean("主入口", R.drawable.room_multi, videoConnectChildList);
