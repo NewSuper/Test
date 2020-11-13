@@ -30,6 +30,7 @@ import com.newsuper.code.home.BaseExpandableRecyclerViewAdapter;
 import com.newsuper.code.jinyun.JinyunActivity;
 import com.newsuper.code.loadAnimation.LoadAnimationActivity;
 import com.newsuper.code.matisse.MatissePhotoActivity;
+import com.newsuper.code.ruler.RulerActivity;
 import com.newsuper.code.search.JianShuSearchActivity;
 import com.newsuper.code.slitab.LadderTextActivity;
 import com.newsuper.code.supertextview.SuperTextActivity;
@@ -139,6 +140,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("仿京东金融的数值滚动尺", R.drawable.room_multi, 1, RulerActivity.class));
         videoConnectChildList.add(new ChildBean("高仿网易严选底部弹出菜单", R.drawable.room_multi, 1, BottomPopActivity.class));
         videoConnectChildList.add(new ChildBean("梯形textview", R.drawable.room_multi, 1, LadderTextActivity.class));
         videoConnectChildList.add(new ChildBean("仿支付宝tab选择滑动子View效果", R.drawable.room_multi, 1, TabScrollActivity.class));
