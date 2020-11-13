@@ -38,6 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".tabscroll.TabScrollActivity"/>
         <activity android:name=".flourish.FlourishActivity"/>
         <activity android:name=".blurimg.BlurImgSwitcherActivity"/>
         <activity android:name=".swipe.LiquidSwipeActivity" />

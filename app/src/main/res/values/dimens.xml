@@ -10,7 +10,8 @@
     <dimen name="control_layout_padding">15dp</dimen>
     <dimen name="sketch_gv_padding">15dp</dimen>
 
-
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="maxheight_balllayout" >150dp</dimen>
 
     <dimen name="tabPaddingTop">8dp</dimen>

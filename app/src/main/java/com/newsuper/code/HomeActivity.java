@@ -34,6 +34,7 @@ import com.newsuper.code.search.JianShuSearchActivity;
 import com.newsuper.code.supertextview.SuperTextActivity;
 import com.newsuper.code.swipe.LiquidSwipeActivity;
 import com.newsuper.code.swipeback.SwipeBackActivity;
+import com.newsuper.code.tabscroll.TabScrollActivity;
 import com.newsuper.code.textpathview.PathActivity;
 import com.newsuper.code.tree.TreeActivity;
 import com.newsuper.code.wechat.WechatShouyeActivity;
@@ -137,6 +138,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("仿支付宝tab选择滑动子View效果", R.drawable.room_multi, 1, TabScrollActivity.class));
         videoConnectChildList.add(new ChildBean("页面翻转动画", R.drawable.room_multi, 1, FlourishActivity.class));
         videoConnectChildList.add(new ChildBean("blurimg", R.drawable.room_multi, 1, BlurImgSwitcherActivity.class));
         videoConnectChildList.add(new ChildBean("Flibtab", R.drawable.room_multi, 1, FlibTabActivity.class));
