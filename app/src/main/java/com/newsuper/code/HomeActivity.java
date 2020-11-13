@@ -20,6 +20,7 @@ import com.newsuper.code.dianzan.DianzanActivity;
 import com.newsuper.code.dianzan.pop.PopLikeActivity;
 import com.newsuper.code.downloader.DownloadActivity;
 import com.newsuper.code.fitimg.FitImgActivity;
+import com.newsuper.code.flibtab.FlibTabActivity;
 import com.newsuper.code.gank.ui.GankActivity;
 import com.newsuper.code.goaway.GoAwayActivity;
 import com.newsuper.code.home.BaseExpandableRecyclerViewAdapter;
@@ -133,6 +134,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("Flibtab", R.drawable.room_multi, 1, FlibTabActivity.class));
         videoConnectChildList.add(new ChildBean("Viewpager滑动波浪动画", R.drawable.room_multi, 1, LiquidSwipeActivity.class));
         videoConnectChildList.add(new ChildBean("防沉迷", R.drawable.room_multi, 1, GoAwayActivity.class));
         videoConnectChildList.add(new ChildBean("释放内存", R.drawable.room_multi, 1, BollonActivity.class));

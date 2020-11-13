@@ -41,6 +41,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".swipe.LiquidSwipeActivity" />
+        <activity android:name=".flibtab.FlibTabActivity"/>
         <activity android:name=".bollon.BollonActivity" />
 
         <!--拍照上传的authorities  matisse框架限定必须为com.thunder.sample.fileprovider ，代码中设定也必须为这个，否则报Attempt to invoke virtual method 'android.content.res.XmlResourceParser -->

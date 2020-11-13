@@ -13,6 +13,12 @@
 
     <dimen name="maxheight_balllayout" >150dp</dimen>
 
+    <dimen name="tabPaddingTop">8dp</dimen>
+    <dimen name="tabPaddingBottom">8dp</dimen>
+    <dimen name="leftTabPaddingStart">8dp</dimen>
+    <dimen name="leftTabPaddingEnd">3dp</dimen>
+    <dimen name="rightTabPaddingEnd">8dp</dimen>
+    <dimen name="rightTabPaddingStart">3dp</dimen>
 
     <dimen name="dp_m_60">-60dp</dimen>
     <dimen name="dp_m_30">-30dp</dimen>
@@ -431,4 +437,6 @@
     <dimen name="sp_40">40sp</dimen>
     <dimen name="sp_42">42sp</dimen>
     <dimen name="sp_48">48sp</dimen>
+
+
 </resources>

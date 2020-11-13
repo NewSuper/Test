@@ -119,4 +119,21 @@
     <declare-styleable name="LiquidSwipeViewPager">
         <attr name="scrollerDuration" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="FlipTab">
+        <attr name="removeDefaultPadding" format="boolean" />
+        <attr name="flipAnimationDuration" format="integer" />
+        <attr name="wobbleReturnAnimationDuration" format="integer" />
+        <attr name="wobbleAngle" format="float" />
+        <attr name="overallColor" format="color" />
+        <attr name="highlightColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="leftTabText" format="string" />
+        <attr name="rightTabText" format="string" />
+        <attr name="startingTab" format="enum" >
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="borderWidth" format="dimension"/>
+    </declare-styleable>
 </resources>
