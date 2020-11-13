@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.newsuper.code.blurimg.BlurImageSwitcher;
+import com.newsuper.code.blurimg.BlurImgSwitcherActivity;
 import com.newsuper.code.bollon.BollonActivity;
 import com.newsuper.code.cardswipe.CardSwipeActivity;
 import com.newsuper.code.combine.CombineBitmapActivity;
@@ -134,6 +136,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("blurimg", R.drawable.room_multi, 1, BlurImgSwitcherActivity.class));
         videoConnectChildList.add(new ChildBean("Flibtab", R.drawable.room_multi, 1, FlibTabActivity.class));
         videoConnectChildList.add(new ChildBean("Viewpager滑动波浪动画", R.drawable.room_multi, 1, LiquidSwipeActivity.class));
         videoConnectChildList.add(new ChildBean("防沉迷", R.drawable.room_multi, 1, GoAwayActivity.class));

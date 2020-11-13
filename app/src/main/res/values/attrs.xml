@@ -136,4 +136,9 @@
         </attr>
         <attr name="borderWidth" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="BlurImageSwitcher">
+        <attr name="scaleFactor" format="float" />
+        <attr name="blurFactor" format="float" />
+        <attr name="animationDuration" format="integer" />
+    </declare-styleable>
 </resources>
