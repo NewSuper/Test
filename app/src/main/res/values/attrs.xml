@@ -115,4 +115,8 @@
         <attr name="inner_border_color" format="color" />
         <attr name="mask_color" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="LiquidSwipeViewPager">
+        <attr name="scrollerDuration" format="integer" />
+    </declare-styleable>
 </resources>

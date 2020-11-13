@@ -28,6 +28,7 @@ import com.newsuper.code.loadAnimation.LoadAnimationActivity;
 import com.newsuper.code.matisse.MatissePhotoActivity;
 import com.newsuper.code.search.JianShuSearchActivity;
 import com.newsuper.code.supertextview.SuperTextActivity;
+import com.newsuper.code.swipe.LiquidSwipeActivity;
 import com.newsuper.code.swipeback.SwipeBackActivity;
 import com.newsuper.code.textpathview.PathActivity;
 import com.newsuper.code.tree.TreeActivity;
@@ -132,6 +133,7 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("Viewpager滑动波浪动画", R.drawable.room_multi, 1, LiquidSwipeActivity.class));
         videoConnectChildList.add(new ChildBean("防沉迷", R.drawable.room_multi, 1, GoAwayActivity.class));
         videoConnectChildList.add(new ChildBean("释放内存", R.drawable.room_multi, 1, BollonActivity.class));
         videoConnectChildList.add(new ChildBean("扩展Textview", R.drawable.room_multi, 1, SuperTextActivity.class));
@@ -155,7 +157,7 @@ public class HomeActivity extends AppCompatActivity {
         videoConnectChildList.add(new ChildBean("断点续传下载器", R.drawable.room_multi, 0, DownloadActivity.class));
         videoConnectChildList.add(new ChildBean("仿钉钉群聊头像", R.drawable.room_multi, 0, CombineBitmapActivity.class));
 
-        videoConnectChildList.add(new ChildBean("滑动tab转盘未写", R.drawable.room_multi, 0, CombineBitmapActivity.class));
+        //videoConnectChildList.add(new ChildBean("滑动tab转盘未写", R.drawable.room_multi, 0, CombineBitmapActivity.class));
         // videoConnectChildList.add(new ChildBean("Lottie动画", R.drawable.room_multi, 0, .class));
         if (videoConnectChildList.size() != 0) {
             GroupBean videoConnectGroupBean = new GroupBean("主入口", R.drawable.room_multi, videoConnectChildList);
