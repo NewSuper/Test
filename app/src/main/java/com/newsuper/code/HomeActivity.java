@@ -13,9 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.newsuper.code.blurimg.BlurImageSwitcher;
 import com.newsuper.code.blurimg.BlurImgSwitcherActivity;
 import com.newsuper.code.bollon.BollonActivity;
+import com.newsuper.code.bottompop.BottomPopActivity;
 import com.newsuper.code.cardswipe.CardSwipeActivity;
 import com.newsuper.code.combine.CombineBitmapActivity;
 import com.newsuper.code.dianzan.DianzanActivity;
@@ -31,6 +31,7 @@ import com.newsuper.code.jinyun.JinyunActivity;
 import com.newsuper.code.loadAnimation.LoadAnimationActivity;
 import com.newsuper.code.matisse.MatissePhotoActivity;
 import com.newsuper.code.search.JianShuSearchActivity;
+import com.newsuper.code.slitab.LadderTextActivity;
 import com.newsuper.code.supertextview.SuperTextActivity;
 import com.newsuper.code.swipe.LiquidSwipeActivity;
 import com.newsuper.code.swipeback.SwipeBackActivity;
@@ -138,6 +139,8 @@ public class HomeActivity extends AppCompatActivity {
 //        }
 
         List<ChildBean> videoConnectChildList = new ArrayList<>();
+        videoConnectChildList.add(new ChildBean("高仿网易严选底部弹出菜单", R.drawable.room_multi, 1, BottomPopActivity.class));
+        videoConnectChildList.add(new ChildBean("梯形textview", R.drawable.room_multi, 1, LadderTextActivity.class));
         videoConnectChildList.add(new ChildBean("仿支付宝tab选择滑动子View效果", R.drawable.room_multi, 1, TabScrollActivity.class));
         videoConnectChildList.add(new ChildBean("页面翻转动画", R.drawable.room_multi, 1, FlourishActivity.class));
         videoConnectChildList.add(new ChildBean("blurimg", R.drawable.room_multi, 1, BlurImgSwitcherActivity.class));

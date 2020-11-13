@@ -11,7 +11,7 @@
         </attr>
     </declare-styleable>
 
-<!--    <attr name="duration" format="integer"/>-->
+<!--    <attr name="selectedColor" format="color"/>  <attr name="duration" format="integer"/>-->
     <attr name="showPainter" format="boolean"/>
     <attr name="showPainterActually" format="boolean"/>
     <attr name="pathStrokeWidth" format="dimension"/>
@@ -140,5 +140,14 @@
         <attr name="scaleFactor" format="float" />
         <attr name="blurFactor" format="float" />
         <attr name="animationDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LadderTextView">
+        <attr name="textContent" format="string"/>
+        <attr name="offsetScale" format="float"/>
+        <attr name="isLeft" format="boolean"/>
+        <attr name="isSelected" format="boolean"/>
+        <attr name="selectedColor2" format="color|reference"/>
+        <attr name="strokeWidth" format="dimension"/>
     </declare-styleable>
 </resources>
