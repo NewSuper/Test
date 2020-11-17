@@ -102,8 +102,6 @@ public class HomeActivity extends AppCompatActivity {
 
     private List<GroupBean> initGroupData() {
         List<GroupBean> groupList = new ArrayList<>();
-
-//
 //        // 直播
 //        List<ChildBean> pusherChildList = new ArrayList<>();
 //        pusherChildList.add(new ChildBean("MLVBLiveRoom", R.drawable.room_live, 0, LiveRoomActivity.class));
@@ -115,7 +113,6 @@ public class HomeActivity extends AppCompatActivity {
 //            GroupBean pusherGroupBean = new GroupBean("移动直播", R.drawable.room_live, pusherChildList);
 //            groupList.add(pusherGroupBean);
 //        }
-//
 //        // 初始化播放器
 //        List<ChildBean> playerChildList = new ArrayList<>();
 //        playerChildList.add(new ChildBean("超级播放器", R.drawable.play, 3, SuperPlayerActivity.class));
@@ -123,7 +120,6 @@ public class HomeActivity extends AppCompatActivity {
 //            GroupBean playerGroupBean = new GroupBean("播放器", R.drawable.composite, playerChildList);
 //            groupList.add(playerGroupBean);
 //        }
-//
 //        // 短视频
 //        List<ChildBean> shortVideoChildList = new ArrayList<>();
 //        shortVideoChildList.add(new ChildBean("视频录制", R.drawable.video, 0, TCVideoSettingActivity.class));
@@ -131,7 +127,6 @@ public class HomeActivity extends AppCompatActivity {
 //        shortVideoChildList.add(new ChildBean("视频拼接", R.drawable.composite, TCVideoJoinChooseActivity.TYPE_MULTI_CHOOSE, TCVideoJoinChooseActivity.class));
 //        shortVideoChildList.add(new ChildBean("图片转场", R.drawable.short_video_picture, TCVideoJoinChooseActivity.TYPE_MULTI_CHOOSE_PICTURE, TCVideoJoinChooseActivity.class));
 //        shortVideoChildList.add(new ChildBean("视频上传", R.drawable.update, TCVideoJoinChooseActivity.TYPE_PUBLISH_CHOOSE, TCVideoJoinChooseActivity.class));
-//
 //        if (shortVideoChildList.size() != 0) {
 //            // 这个是网页链接，配合build.sh避免在其他版本中出现
 //            shortVideoChildList.add(new ChildBean("小视频", R.drawable.xiaoshipin, 0, null));
@@ -171,8 +166,8 @@ public class HomeActivity extends AppCompatActivity {
         videoConnectChildList.add(new ChildBean("断点续传下载器", R.drawable.room_multi, 0, DownloadActivity.class));
         videoConnectChildList.add(new ChildBean("仿钉钉群聊头像", R.drawable.room_multi, 0, CombineBitmapActivity.class));
 
-        //videoConnectChildList.add(new ChildBean("滑动tab转盘未写", R.drawable.room_multi, 0, CombineBitmapActivity.class));
-        // videoConnectChildList.add(new ChildBean("Lottie动画", R.drawable.room_multi, 0, .class));
+        videoConnectChildList.add(new ChildBean("滑动tab转盘未写", R.drawable.room_multi, 0, CombineBitmapActivity.class));
+        videoConnectChildList.add(new ChildBean("Lottie动画", R.drawable.room_multi, 0, CombineBitmapActivity.class));
         if (videoConnectChildList.size() != 0) {
             GroupBean videoConnectGroupBean = new GroupBean("主入口", R.drawable.room_multi, videoConnectChildList);
             groupList.add(videoConnectGroupBean);
