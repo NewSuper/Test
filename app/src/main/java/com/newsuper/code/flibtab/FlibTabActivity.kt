@@ -17,8 +17,7 @@ class FlibTabActivity : AppCompatActivity() {
         textSwitcher.setInAnimation(this@FlibTabActivity, android.R.anim.slide_in_left)
         textSwitcher.setOutAnimation(this@FlibTabActivity, android.R.anim.slide_out_right)
 
-        /*
-        fliptab.setBorderWidth(
+        /* fliptab.setBorderWidth(
             TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP,
                 4f,
@@ -35,8 +34,7 @@ class FlibTabActivity : AppCompatActivity() {
         }
         fliptab.getSelectedTextView().apply {
             setTypeface(typeface, Typeface.BOLD)
-        }
-        */
+        } */
 
         /*
         val flipTab = FlipTab(this)

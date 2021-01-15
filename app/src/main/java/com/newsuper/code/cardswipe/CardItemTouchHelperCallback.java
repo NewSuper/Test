@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 
-
 public class CardItemTouchHelperCallback<T> extends ItemTouchHelper.Callback {
 
     private final RecyclerView.Adapter adapter;
