@@ -31,7 +31,6 @@ public class AppsUtil {
         if (usageStatsManager == null)
             return list;
 
-        // Query usage apps state
         List<UsageStats> queryUsageStats;
         long time = System.currentTimeMillis();
         Calendar cal = Calendar.getInstance();

@@ -15,7 +15,6 @@ import java.util.List;
 
 /**
  * 气球视图管理
- *
  */
 public class BalloonGroup {
     public interface OnBalloonFlyedListener {
